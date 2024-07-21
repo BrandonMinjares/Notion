@@ -74,6 +74,7 @@ app.delete('/data/:rowID', (req: Request, res: Response) => {
                 console.error('Error writing the file:', err);
                 return;
             }
+            res.send('CSV file updated successfully');
             console.log('Row deleted and CSV file updated.');
         });
     });
