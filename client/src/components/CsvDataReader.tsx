@@ -91,6 +91,7 @@ export default function CsvDataReader() {
   return (
   <div>
     <h1>Notion</h1>
+    <center>
     <table>
         <thead>
             <tr>
@@ -119,6 +120,7 @@ export default function CsvDataReader() {
             ))}
         </tbody>
     </table>
+    </center>
     <button onClick={(event) => addRow()}>Add Row</button>
     </div>
   );

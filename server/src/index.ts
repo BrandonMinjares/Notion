@@ -36,7 +36,7 @@ app.post('/data', (req: Request, res: Response) => {
     if (err) {
       return res.status(500).send('Error writing to CSV file');
     }
-    res.send('CSV file updated successfully');
+    res.send('Row added and CSV file updated successfully');
   });
 });
 
@@ -49,8 +49,6 @@ app.delete('/data/:rowID', (req: Request, res: Response) => {
         results.push(row);
     })
     .on('end', () => {
-        console.log('CSV file successfully processed.');
-
         // Delete a specific row (for example, by index)
         const rowIndexToDelete = parseInt(req.params.rowID); // specify the index of the row to delete
         if (rowIndexToDelete >= 0 && rowIndexToDelete < results.length) {
@@ -65,7 +63,7 @@ app.delete('/data/:rowID', (req: Request, res: Response) => {
                 console.error('Error writing the file:', err);
                 return;
             }
-            res.send('CSV file updated successfully');
+            res.send('Row deleted and CSV file updated successfully');
             console.log('Row deleted and CSV file updated.');
         });
     });
