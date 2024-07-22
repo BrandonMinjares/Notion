@@ -12,7 +12,7 @@ Filmbot was built using the following technologies:
 # Installation
 To setup the development environment, open 2 separate terminals. In 1 terminal navigate to the server folder and in the other terminal navigate to the client folder. Ruun the following command in each terminal:
       
-      $ npm install
+    $ npm install
 
 To start the frontend and backend dev servers, run the following command in each separate terminal:
     
@@ -20,8 +20,8 @@ To start the frontend and backend dev servers, run the following command in each
 
 # Functionality
 * Add new rows by clicking the Add button
-* Update rows by clicking on the row you want to update and edit what is in the row
-* Delete rows by clicking on the delete button
+* Update rows by clicking on row and edit
+* Delete rows by clicking on the Delete button
 
 # Features in the future
 * Embed images
