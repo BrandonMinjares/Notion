@@ -1,4 +1,4 @@
-# Notion like project for Replo Take Home Challenge
+# Notion like project
 Built by Brandon Minjares
 
 # Technologies Used
